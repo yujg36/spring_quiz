@@ -1,15 +1,15 @@
 package com.quiz.lesson03.domain;
 
-import java.sql.Date;
+import java.util.Date;
 
-public class realEstate {
+public class RealEstate {
 	private int id;
 	private int realtorId;
 	private String address;
 	private int area;
 	private String type;
 	private int price;
-	private Integer rentPrice; //null 가능
+	private Integer rentPrice; // null 가능
 	private Date createdAt;
 	private Date updatedAt;
 	
@@ -49,12 +49,6 @@ public class realEstate {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	public Integer getRentPrice() {
-		return rentPrice;
-	}
-	public void setRentPrice(Integer rentPrice) {
-		this.rentPrice = rentPrice;
-	}
 	public Date getCreatedAt() {
 		return createdAt;
 	}
@@ -67,9 +61,10 @@ public class realEstate {
 	public void setUpdatedAt(Date updatedAt) {
 		this.updatedAt = updatedAt;
 	}
-	
-	
-
-	
-	
+	public Integer getRentPrice() {
+		return rentPrice;
+	}
+	public void setRentPrice(Integer rentPrice) {
+		this.rentPrice = rentPrice;
+	}
 }
